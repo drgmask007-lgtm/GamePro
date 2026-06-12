@@ -1,0 +1,52 @@
+body {
+    background-image: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg);
+    background-repeat: repeat;
+    background-position: top left;
+}
+
+h1,
+h2,
+h3 {
+    cursor: pointer;
+    text-decoration: underline black;
+    font-family: fantasy;
+    color: rgb(40, 79, 80);
+    font-size: 2em;
+    letter-spacing: normal;
+    line-height: 25px;
+    font-variant: initial;
+}
+
+section {
+    border: 2px solid black;
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    border: 2px solid black;
+    border-radius: 2px;
+
+}
+
+details {
+    font-family: cursive;
+}
+
+aside {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+a:hover {
+    color: rgb(51, 95, 153);
+
+}
+
+nav a {
+
+    cursor: pointer;
+
+}

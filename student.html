@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/Day03/lap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <style>
+        .form-container h2 {
+            color: #222;
+            margin: 0 0 8px 0;
+            font-size: 26px;
+        }
+
+        .form-container p {
+            color: #666;
+            font-size: 14px;
+            margin: 0 0 25px 0;
+
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #444;
+            font-size: 14px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="head">
+            <h1>GamePro</h1>
+        </div>
+        <nav class="bar">
+            <a href="/Day03/project.html" target="_parent">Home</a>
+            <a href="https://kreo-tech.com/" target="_blank">Shopping</a>
+            <a href="/Day02/contact.html" target="_blank">Contact</a>
+            <a href="/Day02/about.html" target="_blank">About</a>
+            <a href="/Day03/review.html" target="_blank">Reviews</a>
+            <a href="/Day02/form.html" target="_blank">Login</a>
+        </nav>
+    </header><br><br>
+    <div class="form-container">
+        <h1>Student Portal</h1><br>
+        <p>Please fill the mandatory details :</p><br>
+
+    </div>
+    <div class="container">
+
+        <form class="#" action="post">
+            <div class="form-group"> <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="Name"><br><br>
+            </div>
+            <div class="form-group"> <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Mail id"><br><br>
+            </div>
+            <div class="form-group"> <label for="phone">Phone Number :</label>
+                <input type="tel" id="phone" name="phone" placeholder="mobile no"><br><br>
+            </div>
+            <div class="form-group"> <label for="password">Password :</label>
+                <input type="password" id="password" name="password" placeholder="xxxxxxxxxxxx"><br><br>
+            </div>
+            <div class="form-group"><label for="gender">Gender :</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label><br><br>
+            </div>
+            <div class="form-group"><label for="course">Course</label>
+                <select name="course" id="course">
+                    <option value="select">Select Courses</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="B.A">B.A</option>
+                </select><br><br>
+            </div>
+
+
+            <label for="address">Address :</label>
+            <textarea name="address" id="address" rows="5" cols="20"
+                placeholder="Enter your address"></textarea><br><br>
+            <label for="age">Age :</label>
+            <input type="number" id="age" name="age" min="13" max="150" placeholder="Age"><br><br>
+            <input type="submit" value="Submit">
+            <button type="reset">Reset</button>
+
+        </form>
+        <footer>
+            <div class="foot">
+                <p>&copy; All Rights Reserved,GamePro</p>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>
