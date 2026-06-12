@@ -2,57 +2,209 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="/Day03/lap.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+
+
+
+        .bar a {
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .form-container h1 {
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .form-container p {
+            margin-top: 0;
+            color: #666666;
+            font-size: 14px;
+        }
+
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="password"],
+        .form-group input[type="number"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid purple;
+            border-radius: 20px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+
+        .radio-group {
+            margin-bottom: 18px;
+        }
+
+        .radio-group .main-label {
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+            margin-right: 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+
+        .button-group {
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        .button-group input[type="submit"],
+        .button-group button[type="reset"] {
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border: 2px solid #333333;
+            background: #ffffff;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+
+        .button-group input[type="submit"]:hover,
+        .button-group button[type="reset"]:hover {
+            background-color: #f0f0f0;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #dddddd;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 12px;
+            color: #777777;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <h1>Student Form</h1>
-    </div>
-    <div>
-        <p>Please fill the mandatory details :</p>
-        <form action="post">
-            <label for="name">Name :</label>
-            <input type="text" id="name" name="name" placeholder="Name"><br><br>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Mail id"><br><br>
-            <label for="phone">Phone Number :</label>
-            <input type="tel" id="phone" name="phone" placeholder="mobile no"><br><br>
-            <label for="password">Password :</label>
-            <input type="password" id="password" name="password" placeholder="xxxxxxxxxxxx"><br><br>
-            <label for="gender">Gender :</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-            <input type="radio" id="others" name="gender" value="others">
-            <label for="others">Others</label><br><br>
-            <label for="course">Course :</label><br>
-            <select name="course" id="course" title="Select Course">
-                <option value="">Select Course</option>
-                <option value="btech">B.Tech</option>
-                <option value="bsc">B.Sc</option>
-                <option value="ba">B.A</option>
-                <option value="bcom">B.Com</option>
-            </select><br><br>
-            <label for="address">Address :</label>
-            <textarea name="address" id="address" rows="5" cols="20"
-                placeholder="Enter your address"></textarea><br><br>
-            <label for="age">Age :</label>
-            <input type="number" id="age" name="age" min="13" max="150" placeholder="Age"><br><br>
-            <input type="submit" value="Submit">
-            <button type="reset">Reset</button>
+    <header class="main-header">
+        <div class="head">
+            <h1>GamePro</h1>
+        </div>
+        <nav class="bar">
+            <a href="/Day03/project.html" target="_parent">Home</a>
+            <a href="https://kreo-tech.com" target="_blank">Shopping</a>
+            <a href="/Day02/contact.html" target="_blank">Contact</a>
+            <a href="/Day02/about.html" target="_blank">About</a>
+            <a href="/Day03/review.html" target="_blank">Reviews</a>
+            <a href="/Day02/form.html" target="_blank">Login</a>
+        </nav>
+    </header>
+    <div class="hide"></div>
 
+    <div class="container">
+        <div class="form-container">
+            <h1> <span class="span">|</span> Login to GamePro</h1>
+            <p>Please fill the mandatory details :</p>
+        </div>
+
+        <form action="post">
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Mail id">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number :</label>
+                <input type="tel" id="phone" name="phone" placeholder="mobile no">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password" placeholder="xxxxxxxxxxxx">
+            </div>
+
+            <div class="radio-group">
+                <span class="main-label">Gender :</span>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label>
+            </div>
+
+
+
+
+
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <button type="reset">Reset</button>
+            </div>
         </form>
     </div>
+
     <footer>
         <div class="foot">
-            <p>&copy; All Rights Reserved,GamePro</p>
+            <p>&copy; All Rights Reserved, GamePro</p>
         </div>
     </footer>
-
 </body>
 
 </html>
