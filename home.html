@@ -1,38 +1,101 @@
-<style>
-    .main {
-        position: relative;
-        width: 750px;
-        height: 200px;
+<!DOCTYPE html>
+<html lang="en">
 
-        margin: 20px;
-        text-align: center;
-    }
+<head>
+    <link rel="stylesheet" href="lap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepro</title>
+</head>
 
-    .badge {
-        text-align: right;
-    }
-
-    .child {
-        position: relative;
-        top: 10px;
-        left: 10px;
-        width: 300px;
-        height: 50px;
-        line-height: 50px;
+<body>
 
 
-    }
+    <header class="main-header">
+        <div class="head">
+            <h1>GamePro</h1>
+        </div>
+        <nav class="bar">
+            <a href="/Day03/project.html" target="_parent">Home</a>
+            <a href="https://kreo-tech.com/" target="_blank">Shopping</a>
+            <a href="/Day02/contact.html" target="_blank">Contact</a>
+            <a href="/Day02/about.html" target="_blank">About</a>
+            <a href="/Day03/review.html" target="_blank">Reviews</a>
+            <a href="/Day02/form.html" target="_blank">Login</a>
+        </nav>
+    </header>
 
-    .link {
-        position: absolute;
-        bottom: -60px;
-        left: 20px;
-        border-radius: 10%;
-        width: 100px;
-        height: 50px;
-        line-height: 50px;
-        background: rgb(200, 177, 230);
-        padding: 5px 10px;
-        color: white;
-    }
-</style>
+
+    <main class="content-wrapper">
+
+        <div class="main-hero">
+            <div class="child">
+                <h2>30% OFF on first order on <br> gaming laptops</h2>
+            </div>
+            <div class="badge">
+                <img src="/Day03/video/download.jpeg" alt="lap" width="350">
+            </div>
+            <div class="link">
+                <a href="https://kreo-tech.com/collections/shark-sale" target="_blank">Explore more</a>
+            </div>
+        </div>
+
+        <div class="releases-section">
+            <div class="latest">
+                <h2>Latest releases</h2>
+            </div>
+            <div class="all">
+                <nav>
+                    <a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=keyboard" target="_blank"><img
+                            src="/Day03/video/key.webp" alt="key" width="600"></a>
+                    <a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=mouse" target="_blank"><img
+                            src="/Day03/video/mou.webp" alt="mouse" width="600"></a>
+                    <a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=monitors" target="_blank"><img
+                            src="/Day03/video/mon.webp" alt="monitor" width="600"></a>
+                    <a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=cooler" target="_blank"><img
+                            src="/Day03/video/cool.webp" alt="cooler" width="600"></a>
+                    <a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=headphones" target="_blank"><img
+                            src="/Day03/video/head.webp" alt="headphones" width="600"></a>
+                    <a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=accessories" target="_blank"><img
+                            src="/Day03/video/pad.webp" alt="accessories" width="600"></a>
+                </nav>
+            </div>
+        </div>
+        <br>
+
+        <div class="inventory-section">
+            <h2>What we sell</h2>
+            <details>
+                <summary>Click to see the full products</summary>
+                <ul>
+                    <li><a href="https://kreo-tech.com/collections/controllers">Controllers</a></li>
+                    <li><a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=monitors">Monitors</a></li>
+                    <li><a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=chairs">Gaming Chairs</a></li>
+                    <li><a href="https://kreo-tech.com/search?options%5Bprefix%5D=last&q=mic">Mics</a></li>
+                </ul>
+            </details>
+        </div>
+
+        <div class="student">
+            <div>
+                <h2>Apply for students program</h2>
+                <p>Get instant cashback and surprise gifts</p>
+            </div>
+            <div>
+                <a href="/Day03/student.html" target="_blank"><button type="button">Apply Now</button></a>
+            </div>
+        </div>
+
+    </main>
+    <br>
+    <hr><br>
+
+    <footer>
+        <div class="foot">
+            <p>&copy; All Rights Reserved,GamePro</p>
+        </div>
+    </footer><br>
+
+</body>
+
+</html>
